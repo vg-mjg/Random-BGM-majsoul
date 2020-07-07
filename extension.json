@@ -9,12 +9,12 @@
   "dependencies": {},
   "entry": "script.js",
   "resourcepack": [
-    "audio/bg/Normal1.mp3",
-    "audio/bg/Normal2.mp3",
-    "audio/bg/Normal3.mp3",
-    "audio/bg/Normal4.mp3",
+    "audio/bg/game1.mp3",
+    "audio/bg/game2.mp3",
+    "audio/bg/game3.mp3",
+    "audio/bg/game4.mp3",
     "audio/bg/lobby.mp3",
-    "audio/bg/Exciting2.mp3",
-    "audio/bg/Exciting1.mp3"
+    "audio/bg/riichi2.mp3",
+    "audio/bg/riichi1.mp3"
     ]
 }

@@ -1,5 +1,7 @@
 if (!!view && !!uiscript) {
   const musicDir = 'bg/'
+  const riichiN=2
+  const gameN=5
   const _showBackup = uiscript.UI_GameEnd.prototype.show
   uiscript.UI_GameEnd.prototype.show = function () {
     var musicPlayerFlag = false
@@ -62,8 +64,8 @@ if (!!view && !!uiscript) {
       if (richMusicSet.count < richedCount) {
         richMusicSet.count = richedCount
         fileDir = (() => {
-          var randomnumber = Math.floor(Math.random() * 2)+1;
-          let richFile = 'Exciting' + randomnumber
+          var randomnumber = Math.floor(Math.random() * (riichiN-1))+1;
+          let richFile = 'riichi' + randomnumber
           return richFile
         })()
         richMusicSet.file = fileDir
@@ -93,8 +95,8 @@ if (!!view && !!uiscript) {
         return functionBackup.apply(this, args)
       }
     }
-    var randomnumber = Math.floor(Math.random() * 4)+1;
-    thisTurnBGM = 'Normal' + randomnumber 
+    var randomnumber = Math.floor(Math.random() * (gameN-1))+1;
+    thisTurnBGM = 'game' + randomnumber 
     richedCount = 0
     fewPai = false
     richMusicSet.count = 0
